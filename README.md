@@ -62,16 +62,6 @@ Username: root
 Password: 1813025f8fc6ba777e6d04c417
 
 Droplet Name: sec-13
-IP Address: 138.197.2.14
+IP Address: 174.138.55.47
 Username: root
-Password: 7afe5ad18c1e03d5e597194fed
-
-Droplet Name: sec-14
-IP Address: 138.197.2.29
-Username: root
-Password: ed0b1aa3536173d318977b3ec5
-
-Droplet Name: sec-15
-IP Address: 138.197.64.63
-Username: root
-Password: 46faec38f6c669b646e0cfa924
+Password: b53e250e0c6fbdf90726255669
