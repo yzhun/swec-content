@@ -3,7 +3,7 @@ git checkout -b "#101"
 touch file.txt
 git add *
 git status
-git commit –m"your comment here"
+git commit -m"your comment here"
 git checkout master
 
 # Push branch
