@@ -5,3 +5,4 @@ git submodule update
 cd bootstrap
 git branch
 git branch -av
+cd ..
