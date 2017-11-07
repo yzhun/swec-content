@@ -6,3 +6,5 @@ cd bootstrap
 git branch
 git branch -av
 cd ..
+git add *
+git commit -m"bootstrap submodule"
