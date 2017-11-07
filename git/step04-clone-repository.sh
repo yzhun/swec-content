@@ -8,7 +8,7 @@ git clone git@<host>:/opt/git/sec.git
 cd sec
 git config --local user.name "your name"
 git config --local user.email "your email"
-git config --local –list
+git config --local --list
 
 # Add new file
 touch README.md
