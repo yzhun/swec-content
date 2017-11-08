@@ -31,8 +31,8 @@ if [ "$1" == "jenkins" ]; then
   usermod -G docker -a jenkins
   sudo systemctl start jenkins
 
-  su -c "cd ~ && pwd && ssh-keygen -t rsa -b 4096" - jenkins
-  cp /var/lib/jenkins/.ssh/id_rsa.pub ./jenkins.rsa.pub
+  #su -c "cd ~ && pwd && ssh-keygen -t rsa -b 4096" - jenkins
+  #cp /var/lib/jenkins/.ssh/id_rsa.pub ./jenkins.rsa.pub
 fi
 
 if [ "$1" == "maven" ]; then
