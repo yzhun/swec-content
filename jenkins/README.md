@@ -1,3 +1,4 @@
+* execute ```./step01-install.sh```
 
 # Jenkins-Github
 * Install "GitHub Pull Request Builder", "SonarQube Scanner for Jenkins" and "Sonar Quality Gates Plugin" Jenkins plugins
