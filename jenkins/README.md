@@ -18,6 +18,7 @@
  Add two job parameters:
   GITHUB_ACCESS_TOKEN
   SONARQUBE_ACCESS_TOKEN
+  SERVICE_PORT=8182
  ```
 * Check & configure "GitHub Pull Request Builder" & "GitHub hook trigger for GITScm polling"
 
