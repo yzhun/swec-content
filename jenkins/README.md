@@ -33,4 +33,7 @@
   ```
   -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.11.v20170118.jar
   ```
-  * Restart Jenkins '''systemctl stop jenkins & systemctl start jenkins'''
+  * Restart Jenkins
+   ```
+   systemctl stop jenkins && systemctl start jenkins
+   ```
