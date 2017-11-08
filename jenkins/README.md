@@ -11,7 +11,14 @@
  ```
 * Create Github access token with repo, admin:repo_hook
 * Configure "GitHub Pull Request Builder" & "GitHub" to use access token
-* Create new pipeline job, using cidd/Jenkinsfile, +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
+* Create new pipeline job, using cidd/Jenkinsfile
+ ```
+ Git repo Refspec:
+  +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
+ Add two job parameters:
+  GITHUB_ACCESS_TOKEN
+  SONARQUBE_ACCESS_TOKEN
+ ```
 * Check & configure "GitHub Pull Request Builder" & "GitHub hook trigger for GITScm polling"
 
 # Issues
