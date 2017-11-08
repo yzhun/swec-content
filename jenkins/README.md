@@ -1,10 +1,16 @@
 * execute ```./step01-install.sh```
 
-# Jenkins-Github
+# Jenkins-Github-SonarQube
 * Install "GitHub Pull Request Builder", "SonarQube Scanner for Jenkins" and "Sonar Quality Gates Plugin" Jenkins plugins
-* Configure Sonar instance and SonarRunner (tools) at Jenkins side
-* Create Github access token with repo, admin:repo_hook, admin:org_hook
-* Install next plugins: "GitHub Pull Request Builder" & "GitHub" to use access token
+* Configure "SonarQube servers" instance
+* Configure "SonarQube Scanner"
+ ```
+ SonarQube Scanner 3.0.3
+ https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.0.3.778.zip
+ sonar-scanner-3.0.3.778
+ ```
+* Create Github access token with repo, admin:repo_hook
+* Configure "GitHub Pull Request Builder" & "GitHub" to use access token
 * Create new pipeline job, using cidd/Jenkinsfile, +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
 * Check & configure "GitHub Pull Request Builder" & "GitHub hook trigger for GITScm polling"
 
