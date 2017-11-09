@@ -8,24 +8,25 @@
    
 # Jenkins-Github-SonarQube
 * Install "GitHub Pull Request Builder", "SonarQube Scanner for Jenkins" and "Sonar Quality Gates Plugin" Jenkins plugins
+* Configure "GitHub" instance
 * Configure "SonarQube servers" instance
 * Configure "SonarQube Scanner"
  ```
- SonarQube Scanner 3.0.3
- https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.0.3.778.zip
- sonar-scanner-3.0.3.778
+ Name: SonarQube Scanner 3.0.3
+ URL: https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.0.3.778.zip
+ Sub-folder: sonar-scanner-3.0.3.778
  ```
 * Create Github access token with repo, admin:repo_hook
 * Configure "GitHub Pull Request Builder" & "GitHub" to use access token
 * Create new pipeline job, using cidd/Jenkinsfile
  ```
- Git repo Refspec:
-  +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
- Add two job parameters:
+ Add job parameters:
+  GITHUB_REPOSITORY
   GITHUB_ACCESS_TOKEN
   SONARQUBE_ACCESS_TOKEN
   SERVICE_PORT=8182
+ Use git repo Refspec:
+  +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
  ```
 * Check & configure "GitHub Pull Request Builder" & "GitHub hook trigger for GITScm polling"
-
-
+* Mark master branch as protected
