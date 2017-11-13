@@ -7,6 +7,7 @@ git subtree add --prefix bootstrap-subtree https://github.com/twbs/bootstrap.git
 git log -2
 
 # pull subtree
+# add additional remote to your form
 git subtree pull --prefix bootstrap-subtree https://github.com/twbs/bootstrap.git master --squash
 
 # use remote
@@ -18,4 +19,3 @@ git subtree pull --prefix bootstrap-subtree-from-remote bootstrap master --squas
 
 #
 git subtree push --prefix bootstrap-subtree-from-remote bootstrap master
-
