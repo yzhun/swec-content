@@ -19,3 +19,6 @@ git subtree pull --prefix bootstrap-subtree-from-remote bootstrap master --squas
 
 #
 git subtree push --prefix bootstrap-subtree-from-remote bootstrap master
+
+
+# using read-tree
