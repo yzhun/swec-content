@@ -1,24 +1,19 @@
 #!/bin/bash
 
-# add subtree
-git subtree add --prefix bootstrap-subtree https://github.com/twbs/bootstrap.git master --squash
+# using sub-tree command
+## add project remote
+git remote add bootstrap-upstream https://github.com/twbs/bootstrap.git
 
-# 
-git log -2
+## fork remote repository and it as additional remote
+git remote add bootstrap-origin git@github.com:VladyslavKurmaz/bootstrap.git
 
-# pull subtree
-# add additional remote to your form
-git subtree pull --prefix bootstrap-subtree https://github.com/twbs/bootstrap.git master --squash
-
-# use remote
-git remote add bootstrap https://github.com/twbs/bootstrap.git
 git remote -v
-git subtree add --prefix bootstrap-subtree-from-remote bootstrap master --squash
-git branch -av
-git subtree pull --prefix bootstrap-subtree-from-remote bootstrap master --squash
 
-#
-git subtree push --prefix bootstrap-subtree-from-remote bootstrap master
+git subtree add --prefix bootstrap-subtree bootstrap-upstream master --squash
+git branch -av
+git subtree pull --prefix bootstrap-subtree bootstrap-upstream master --squash
+## edit README.md
+git subtree push --prefix bootstrap-subtree bootstrap-origin master
 
 
 # using read-tree
