@@ -20,4 +20,5 @@ git commit -m"3.txt"
 git log -4
 # copy commit hash for "2.txt" <commit-hash>
 
+git checkout master
 git cherry-pick <commit-hash>
