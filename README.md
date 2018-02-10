@@ -1,17 +1,28 @@
 # Software Engineering Course
 
 ## Install Talan
-
+### Add prerequisites
+```
+> tln install java,maven,nodejs,docker,docker-compose
+```
 
 ## Github
 * Create personal access token with **repo**, **admin:repo_hook**
 
 ## SonarQube
+* Up SonarQube instance
+```
+> cd sonarqube
+> ./sonarqube-up.sh -d
+```
+* Access point **http://\<host-ip-address\>:9000**, user/pass **admin/admin**
+* Generate access token
+* Install & configure "Github" plugin at Marketplace/Configuration
 
 ## Jenkins
 ### Install
 ```
-> tln install java,jenkins
+> tln install jenkins
 ```
 
 ### Apply fixes (if jenkins logs notifies errors/warnings)
@@ -27,28 +38,34 @@
 * "SonarQube Scanner for Jenkins"
 * "Sonar Quality Gates Plugin"
 
-### Configure
-* "GitHub" instance
-
-
-   
-## Jenkins-Github-SonarQube
+### Configure plugins
 * Configure "SonarQube servers" instance
+* "GitHub" instance
+* ? "Quality Gates - Sonarqube"
+* "GitHub Pull Request Builder"
+
+### Configure tools
 * Configure "SonarQube Scanner"
  ```
- Name: SonarQube Scanner 3.0.3
- URL: https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.0.3.778.zip
- Sub-folder: sonar-scanner-3.0.3.778
- ```
+Name: "SonarQube Scanner 3.0.3.778"
+```
 
-* Configure "GitHub Pull Request Builder" & "GitHub" to use access token
-* Create new pipeline job, using cidd/Jenkinsfile
+
+## Create new pipeline job
+* "GitHub project" : https://github.com/user/saas-template.git
+* "GitHub Pull Request Builder" \[+\]
+* "GitHub hook trigger for GITScm polling"
+* Add job parameters
+  * GITHUB_REPOSITORY - https://github.com/user/saas-template.git
+  * SONARQUBE_SCANNER - SonarQube Scanner 3.0.3.778
+  * GITHUB_ACCESS_TOKEN
+  * SONARQUBE_ACCESS_TOKEN
+  * SERVICE_PORT - 8182
+, using cidd/Jenkinsfile
  ```
  Add job parameters:
   GITHUB_REPOSITORY
-  GITHUB_ACCESS_TOKEN
-  SONARQUBE_ACCESS_TOKEN
-  SERVICE_PORT=8182
+
  Use git repo Refspec:
   +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
  ```
