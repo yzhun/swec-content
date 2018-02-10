@@ -4,7 +4,7 @@
 
 # Go to home folder
 cd ~
-git clone git@<host>:/opt/git/sec.git
+git clone git@host-ip-address:/opt/git/sec.git
 cd sec
 git config --local user.name "your name"
 git config --local user.email "your email"
