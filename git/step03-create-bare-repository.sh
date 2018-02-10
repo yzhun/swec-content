@@ -20,4 +20,4 @@ touch ~/.ssh/authorized_keys
 
 # Merge with other keys
 cd ~
-cat ~/sec.pub >> /home/git/.ssh/authorized_keys
+cat ~/qa.pub >> /home/git/.ssh/authorized_keys
