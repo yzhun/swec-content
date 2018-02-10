@@ -54,12 +54,14 @@ Name: "SonarQube Scanner 3.0.3.778"
 ## Create new pipeline job
 * "GitHub project" : https://github.com/user/saas-template
 * "GitHub Pull Request Builder" \[+\]
+  * Add your user into WhiteList
 * "GitHub hook trigger for GITScm polling"
 * Add job parameters
   * GITHUB_REPOSITORY - https://github.com/user/saas-template.git
   * SONARQUBE_SCANNER - SonarQube Scanner 3.0.3.778
   * GITHUB_ACCESS_TOKEN
   * SONARQUBE_ACCESS_TOKEN
+  * NEXUS_REPOSITORY - 
   * SERVICE_PORT - 8182
 , using cidd/Jenkinsfile
  ```
