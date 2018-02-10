@@ -1,7 +1,7 @@
 # Switch back to the remote VM
 
 # Act as git user
-su – git
+su - git
 
 #Create folder for the new git repository
 mkdir /opt/git/sec.git
@@ -20,4 +20,4 @@ touch ~/.ssh/authorized_keys
 
 # Merge with other keys
 cd ~
-cat ~/qa.pub >> /home/git/.ssh/authorized_keys
+cat ~/sec.pub >> /home/git/.ssh/authorized_keys
