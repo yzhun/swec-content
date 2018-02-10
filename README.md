@@ -52,7 +52,7 @@ Name: "SonarQube Scanner 3.0.3.778"
 
 
 ## Create new pipeline job
-* "GitHub project" : https://github.com/user/saas-template.git
+* "GitHub project" : https://github.com/user/saas-template
 * "GitHub Pull Request Builder" \[+\]
 * "GitHub hook trigger for GITScm polling"
 * Add job parameters
