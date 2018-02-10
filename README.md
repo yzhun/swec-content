@@ -58,6 +58,7 @@ Name: "SonarQube Scanner 3.0.3.778"
 * "GitHub hook trigger for GITScm polling"
 * Add job parameters
   * GITHUB_REPOSITORY - https://github.com/user/saas-template.git
+  * SONARQUNE - SonarQube
   * SONARQUBE_SCANNER - SonarQube Scanner 3.0.3.778
   * GITHUB_ACCESS_TOKEN
   * SONARQUBE_ACCESS_TOKEN
