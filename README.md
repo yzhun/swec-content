@@ -60,8 +60,8 @@ Name: "SonarQube Scanner 3.0.3.778"
   * GITHUB_REPOSITORY - https://github.com/user/saas-template.git
   * SONARQUBE_SERVER - SonarQube
   * SONARQUBE_SCANNER - SonarQube Scanner 3.0.3.778
-  * GITHUB_ACCESS_TOKEN
   * SONARQUBE_ACCESS_TOKEN
+  * GITHUB_ACCESS_TOKEN
   * NEXUS_REPOSITORY - 
   * SERVICE_PORT - 8182
 , using cidd/Jenkinsfile
