@@ -4,7 +4,7 @@
 
 
 ## Github
-* Create personal access token with *repo*, *admin:repo_hook*
+* Create personal access token with **repo**, **admin:repo_hook**
 
 ## SonarQube
 
