@@ -14,6 +14,15 @@ https://github.com/project-talan/talan-core
 > git clone https://github.com/swe-course/swec-content.git
 ```
 
+## Nexus
+* Up Nexus instance
+```
+> cd swec-content/nexus
+> ./nexus-up.sh -d
+```
+* Access point **http://\<host-ip-address\>:8081**, user/pass **admin/admin123**
+* Create new maven2 hosted repository (name: saas-template)
+
 ## Github
 * Create personal access token with **repo**, **admin:repo_hook**
 
