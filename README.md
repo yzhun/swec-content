@@ -64,13 +64,10 @@ Name: "SonarQube Scanner 3.0.3.778"
   * GITHUB_ACCESS_TOKEN
   * NEXUS_REPOSITORY - 
   * SERVICE_PORT - 8182
-, using cidd/Jenkinsfile
- ```
- Add job parameters:
-  GITHUB_REPOSITORY
-
- Use git repo Refspec:
+* Add reference to Jenkinsfile
+* Use git repo Refspec:
+```
   +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
  ```
-* Check & configure "GitHub Pull Request Builder" & "GitHub hook trigger for GITScm polling"
+## Gonfigure branch(es)
 * Mark master branch as protected
