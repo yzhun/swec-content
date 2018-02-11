@@ -78,9 +78,12 @@ Name: "SonarQube Scanner 3.0.3.778"
 * Add job parameters
   * SONARQUBE_SERVER - SonarQube
   * SONARQUBE_SCANNER - SonarQube Scanner 3.0.3.778
-  * SONARQUBE_ACCESS_TOKEN
-  * GITHUB_ACCESS_TOKEN
-  * NEXUS_REPOSITORY - 
+  * SONARQUBE_ACCESS_TOKEN - 
+  * GITHUB_ACCESS_TOKEN -
+  * NEXUS_HOST - 
+  * NEXUS_REPO - 
+  * NEXUS_USER - 
+  * NEXUS_PASS - 
   * SERVICE_PORT - 8182
 * "GitHub Pull Request Builder" \[+\]
   * Add your user into WhiteList
