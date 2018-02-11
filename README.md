@@ -57,7 +57,6 @@ Name: "SonarQube Scanner 3.0.3.778"
   * Add your user into WhiteList
 * "GitHub hook trigger for GITScm polling"
 * Add job parameters
-  * GITHUB_REPOSITORY - https://github.com/user/saas-template.git
   * SONARQUBE_SERVER - SonarQube
   * SONARQUBE_SCANNER - SonarQube Scanner 3.0.3.778
   * SONARQUBE_ACCESS_TOKEN
