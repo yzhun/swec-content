@@ -47,7 +47,7 @@ https://github.com/project-talan/talan-core
 * "Sonar Quality Gates Plugin"
 
 ### Configure plugins
-* Configure "SonarQube servers" instance
+* Configure "SonarQube servers" instance, name - SonarQube
 * "GitHub" instance
 * ? "Quality Gates - Sonarqube"
 * "GitHub Pull Request Builder"
