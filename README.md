@@ -12,6 +12,7 @@ https://github.com/project-talan/talan-core
 ### Clone repository with helpers
 ```
 > git clone https://github.com/swe-course/swec-content.git
+```
 
 ## Github
 * Create personal access token with **repo**, **admin:repo_hook**
