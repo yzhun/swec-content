@@ -33,7 +33,7 @@ https://github.com/project-talan/talan-core
 > tln install jenkins
 ```
 
-### Apply fixes (if jenkins logs notifies errors/warnings)
+### Apply fix(es)
 * "ALPN callback dropped: SPDY and HTTP/2 are disabled. Is alpn-boot on the boot class path?"
   * Get your Java version ```java -version```
   * Find corresponding alpn boot library ```https://www.eclipse.org/jetty/documentation/9.4.x/alpn-chapter.html#alpn-versions```
