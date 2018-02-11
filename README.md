@@ -1,7 +1,7 @@
 # Software Engineering Course
 
-## Install Talan
-### Setup
+## Install prerequisites
+### Setup Talan
 ```
 https://github.com/project-talan/talan-core
 ```
@@ -9,6 +9,9 @@ https://github.com/project-talan/talan-core
 ```
 > tln install java,maven,nodejs,docker,docker-compose
 ```
+### Clone repository with helpers
+```
+> git clone https://github.com/swe-course/swec-content.git
 
 ## Github
 * Create personal access token with **repo**, **admin:repo_hook**
