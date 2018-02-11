@@ -45,7 +45,8 @@ https://github.com/project-talan/talan-core
 * "GitHub Pull Request Builder"
 * "SonarQube Scanner for Jenkins"
 * "Sonar Quality Gates Plugin"
-* "Pipeline Utility Steps Plugin"
+* "Pipeline Utility Steps"
+* "HTTP Request Plugin"
 
 ### Configure plugins
 * Configure "SonarQube servers" instance
