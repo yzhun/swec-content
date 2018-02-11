@@ -20,7 +20,7 @@ https://github.com/project-talan/talan-core
 ## SonarQube
 * Up SonarQube instance
 ```
-> cd sonarqube
+> cd swec-content/sonarqube
 > ./sonarqube-up.sh -d
 ```
 * Access point **http://\<host-ip-address\>:9000**, user/pass **admin/admin**
