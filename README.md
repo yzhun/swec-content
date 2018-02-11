@@ -47,7 +47,10 @@ https://github.com/project-talan/talan-core
 * "Sonar Quality Gates Plugin"
 
 ### Configure plugins
-* Configure "SonarQube servers" instance, name - SonarQube
+* Configure "SonarQube servers" instance
+```
+name - SonarQube
+```
 * "GitHub" instance
 * ? "Quality Gates - Sonarqube"
 * "GitHub Pull Request Builder"
@@ -72,6 +75,10 @@ Name: "SonarQube Scanner 3.0.3.778"
   * Add your user into WhiteList
 * "GitHub hook trigger for GITScm polling"  
 * Add reference to Jenkinsfile
+* Add additional branch
+```
+${sha1}
+```
 * Use git repo Refspec:
 ```
   +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
