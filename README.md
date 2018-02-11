@@ -1,6 +1,10 @@
 # Software Engineering Course
 
 ## Install Talan
+### Setup
+```
+https://github.com/project-talan/talan-core
+```
 ### Add prerequisites
 ```
 > tln install java,maven,nodejs,docker,docker-compose
