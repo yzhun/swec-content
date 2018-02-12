@@ -84,7 +84,7 @@ Name: "SonarQube Scanner 3.0.3.778"
   * NEXUS_REPO - 
   * NEXUS_USER - 
   * NEXUS_PASS - 
-  * SERVICE_PORT - 8182
+  * SERVICES_GJ_PORT - 8182
 * "GitHub Pull Request Builder" \[+\]
   * Add your user into WhiteList
 * "GitHub hook trigger for GITScm polling"  
