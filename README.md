@@ -16,10 +16,10 @@
 
 ## Nexus
 * Up Nexus instance
-```
-> cd swec-content/nexus
-> ./nexus-up.sh -d
-```
+  ```
+  > cd swec-content/nexus
+  > ./nexus-up.sh -d
+  ```
 * Access point **http://\<host-ip-address\>:8081**, user/pass **admin/admin123**
 * Create new maven2 hosted repository, name: **saas-template**
 
@@ -27,6 +27,9 @@
 
 ## Github
 * Create personal access token with **repo**, **admin:repo_hook**
+
+![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/github-token.png)
+
 
 ## SonarQube
 * Up SonarQube instance
