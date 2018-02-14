@@ -22,13 +22,11 @@
   ```
 * Access point **http://\<host-ip-address\>:8081**, user/pass **admin/admin123**
 * Create new maven2 hosted repository, name: **saas-template**
-
-![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/nexus-maven-repo.png)
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/nexus-maven-repo.png)
 
 ## Github
 * Create personal access token with **repo**, **admin:repo_hook**
-
-![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/github-token.png)
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/github-token.png)
 
 
 ## SonarQube
@@ -38,8 +36,12 @@
 > ./sonarqube-up.sh -d
 ```
 * Access point **http://\<host-ip-address\>:9000**, user/pass **admin/admin**
+* Install "Github" plugin
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/sonar-github.png)
 * Generate access token
-* Install & configure "Github" plugin at Marketplace/Configuration
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/sonar-github.png)
+
+
 
 ## Jenkins
 ### Install
