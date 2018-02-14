@@ -103,8 +103,11 @@
 * Configure "SonarQube Scanner", name - **SonarQube Scanner 3.0.3.778**
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-tools-sonar-scanner.png)
 
+## Clone template **https://github.com/swe-course/saas-template**
+
 ## Create new pipeline job
-* "GitHub project" : https://github.com/user/saas-template
+* Specify your fork url
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-repo.png)
 * Add job parameters
   * SONARQUBE_SERVER - SonarQube
   * SONARQUBE_SCANNER - SonarQube Scanner 3.0.3.778
@@ -115,17 +118,20 @@
   * NEXUS_USER - 
   * NEXUS_PASS - 
   * SERVICES_GJ_PORT - 8182
-* "GitHub Pull Request Builder" \[+\]
+* Configure "GitHub Pull Request Builder"
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-ghprb.png)
   * Add your user into WhiteList
 * "GitHub hook trigger for GITScm polling"  
-* Add reference to Jenkinsfile
-* Add additional branch
-```
-${sha1}
-```
-* Use git repo Refspec:
-```
-  +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
- ```
+* Set pipeline definitions
+  * Add additional branch
+    ```
+    ${sha1}
+    ```
+  * Use git repo Refspec:
+    ```
+    +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
+     ```
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-definition.png)
+
 ## Gonfigure branch(es)
 * Mark master branch as protected
