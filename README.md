@@ -31,15 +31,15 @@
 
 ## SonarQube
 * Up SonarQube instance
-```
-> cd swec-content/sonarqube
-> ./sonarqube-up.sh -d
-```
+  ```
+  > cd swec-content/sonarqube
+  > ./sonarqube-up.sh -d
+  ```
 * Access point **http://\<host-ip-address\>:9000**, user/pass **admin/admin**
 * Install "Github" plugin
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/sonar-github.png)
 * Generate access token
-  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/sonar-github.png)
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/sonar-token.png)
 
 
 
