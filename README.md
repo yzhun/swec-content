@@ -48,6 +48,7 @@
   ```
   > tln install jenkins
   ```
+* Access point **http://\<host-ip-address\>:8080**
 * Apply fix(es) for **"ALPN callback dropped: SPDY and HTTP/2 are disabled. Is alpn-boot on the boot class path?"**
   * Get your Java version 
     ```
