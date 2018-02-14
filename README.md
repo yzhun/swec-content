@@ -100,11 +100,8 @@
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-ghprb.png)
 
 ### Configure tools
-* Configure "SonarQube Scanner"
- ```
-Name: "SonarQube Scanner 3.0.3.778"
-```
-
+* Configure "SonarQube Scanner", name - **SonarQube Scanner 3.0.3.778**
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-tools-sonar-scanner.png)
 
 ## Create new pipeline job
 * "GitHub project" : https://github.com/user/saas-template
