@@ -3,7 +3,7 @@
 ## Prerequisites
 * Install [Talan](https://github.com/project-talan/talan-core)
 * Install toolset ```> tln install java,maven,nodejs,docker,docker-compose```
-### Clone repository with helpers
+* Clone repository with helpers
 ```
 > cd ~
 > mkdir projects
@@ -18,7 +18,8 @@
 > ./nexus-up.sh -d
 ```
 * Access point **http://\<host-ip-address\>:8081**, user/pass **admin/admin123**
-* Create new maven2 hosted repository (name: saas-template)
+* Create new maven2 hosted repository, name: **saas-template**
+![GitHub Logo](/images/logo.png)
 
 ## Github
 * Create personal access token with **repo**, **admin:repo_hook**
