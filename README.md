@@ -91,13 +91,13 @@
 * "HTTP Request"
 
 ### Configure plugins
-* Configure "SonarQube servers" instance
-```
-name - SonarQube
-```
-* "GitHub" instance
+* Configure "SonarQube servers" instance, name **SonarQube**
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-sonar.png)
+* "GitHub" instance + Github access credentials using created token
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-github.png)
 * ? "Quality Gates - Sonarqube"
 * "GitHub Pull Request Builder"
+  ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-ghprb.png)
 
 ### Configure tools
 * Configure "SonarQube Scanner"
