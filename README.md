@@ -44,17 +44,39 @@
 
 
 ## Jenkins
-### Install
-```
-> tln install jenkins
-```
-
-### Apply fix(es)
-* "ALPN callback dropped: SPDY and HTTP/2 are disabled. Is alpn-boot on the boot class path?"
-  * Get your Java version ```java -version```
-  * Find corresponding alpn boot library ```https://www.eclipse.org/jetty/documentation/9.4.x/alpn-chapter.html#alpn-versions```
-  * Download it from ```http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/``` and store in ```/usr/lib/jvm```
-  * Modify property ```JAVA_ARGS``` in ```/etc/default/jenkins``` adding ```-Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.11.v20170118.jar```
+* Install
+  ```
+  > tln install jenkins
+  ```
+* Apply fix(es) for **"ALPN callback dropped: SPDY and HTTP/2 are disabled. Is alpn-boot on the boot class path?"**
+  * Get your Java version 
+    ```
+    java -version
+    ```
+  * Find corresponding alpn boot library
+    ```
+    https://www.eclipse.org/jetty/documentation/9.4.x/alpn-chapter.html#alpn-versions
+    ```
+  * Download it from
+    ```
+    http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/
+    ```
+    and store in
+    ```
+    /usr/lib/jvm
+    ```
+  * Modify property
+    ```
+    JAVA_ARGS
+    ```
+    in
+    ```
+    /etc/default/jenkins
+    ```
+    adding
+    ```
+    -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.11.v20170118.jar
+    ```
   * Restart Jenkins ```systemctl stop jenkins && systemctl start jenkins```
 
 ### Install plugins
