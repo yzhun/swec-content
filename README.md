@@ -78,14 +78,17 @@
     ```
     -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.11.v20170118.jar
     ```
-  * Restart Jenkins ```systemctl stop jenkins && systemctl start jenkins```
+  * Restart Jenkins
+    ```
+    systemctl stop jenkins && systemctl start jenkins
+    ```
 
 ### Install plugins
 * "GitHub Pull Request Builder"
-* "SonarQube Scanner for Jenkins"
-* "Sonar Quality Gates Plugin"
+* "SonarQube Scanner"
+* "Sonar Quality Gates"
 * "Pipeline Utility Steps"
-* "HTTP Request Plugin"
+* "HTTP Request"
 
 ### Configure plugins
 * Configure "SonarQube servers" instance
