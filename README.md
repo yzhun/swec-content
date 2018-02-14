@@ -2,14 +2,17 @@
 
 ## Prerequisites
 * Install [Talan](https://github.com/project-talan/talan-core)
-* Install toolset ```> tln install java,maven,nodejs,docker,docker-compose```
+* Install toolset
+  ```
+  > tln install java,maven,nodejs,docker,docker-compose
+  ```
 * Clone repository with helpers
-```
-> cd ~
-> mkdir projects
-> cd projects
-> git clone https://github.com/swe-course/swec-content.git
-```
+  ```
+  > cd ~
+  > mkdir projects
+  > cd projects
+  > git clone https://github.com/swe-course/swec-content.git
+  ```
 
 ## Nexus
 * Up Nexus instance
