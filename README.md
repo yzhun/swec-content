@@ -19,7 +19,8 @@
 ```
 * Access point **http://\<host-ip-address\>:8081**, user/pass **admin/admin123**
 * Create new maven2 hosted repository, name: **saas-template**
-![GitHub Logo](/images/logo.png)
+
+![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/nexus-maven-repo.png)
 
 ## Github
 * Create personal access token with **repo**, **admin:repo_hook**
