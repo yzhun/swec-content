@@ -130,6 +130,7 @@
 * Specify your fork url
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-repo.png)
 * Add job parameters
+
 | Parameter name | Value |
 | --- | --- |
 | SONARQUBE_SERVER | **SonarQube** |
