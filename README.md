@@ -67,25 +67,37 @@
     ```
     https://www.eclipse.org/jetty/documentation/9.4.x/alpn-chapter.html#alpn-versions
     ```
-  * Download it from
+    | OpenJDK version | ALPN version |
+    | --- | --- |
+    | 1.8.0u151 | 8.1.11.v20170118 |
+    
+  * Copy link to the corresponding ALPN jar from 'ALPN version' folder
     ```
     http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/
     ```
-    and store in
+    > http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.11.v20170118/alpn-boot-8.1.11.v20170118.jar
+    
+  * Goto JVM folder
     ```
-    /usr/lib/jvm
+    > cd /usr/lib/jvm
     ```
-  * Modify property
+  * Download jar file
     ```
-    JAVA_ARGS
+    > wget http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.11.v20170118/alpn-boot-8.1.11.v20170118.jar
     ```
-    in
+  * Goto folder
     ```
-    /etc/default/jenkins
+    > cd /etc/default
     ```
-    adding
+  * Open for editing **jenkins** file
+  * Modify property **JAVA_ARGS** variable
+    from
     ```
-    -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.11.v20170118.jar
+    JAVA_ARGS="-Djava.awt.headless=true"
+    ```
+    too
+    ```
+    JAVA_ARGS="-Djava.awt.headless=true -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.11.v20170118.jar"
     ```
   * Restart Jenkins
     ```
@@ -118,17 +130,19 @@
 * Specify your fork url
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-repo.png)
 * Add job parameters
+
   | Parameter name | Value |
   | --- | --- |
   | SONARQUBE_SERVER | **SonarQube** |
   | SONARQUBE_SCANNER | **SonarQube Scanner 3.0.3.778** |
-  | SONARQUBE_ACCESS_TOKEN | . |
-  | GITHUB_ACCESS_TOKEN | . |
+  | SONARQUBE_ACCESS_TOKEN |  |
+  | GITHUB_ACCESS_TOKEN |  |
   | NEXUS_HOST | **http://\<host-ip-address\>:8081** |
   | NEXUS_REPO | **saas-template** |
   | NEXUS_USER | **admin** |
   | NEXUS_PASS | **admin123** |
   | SERVICES_GJ_PORT | **8182** |
+  
 * Configure "GitHub Pull Request Builder"
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-ghprb.png)
   * Add your user into WhiteList
