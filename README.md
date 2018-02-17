@@ -131,17 +131,17 @@
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-repo.png)
 * Add job parameters
 
-| Parameter name | Value |
-| --- | --- |
-| SONARQUBE_SERVER | **SonarQube** |
-| SONARQUBE_SCANNER | **SonarQube Scanner 3.0.3.778** |
-| SONARQUBE_ACCESS_TOKEN | - |
-| GITHUB_ACCESS_TOKEN | - |
-| NEXUS_HOST | **http://\<host-ip-address\>:8081** |
-| NEXUS_REPO | **saas-template** |
-| NEXUS_USER | **admin** |
-| NEXUS_PASS | **admin123** |
-| SERVICES_GJ_PORT | **8182** |
+ | Parameter name | Value |
+ | --- | --- |
+ | SONARQUBE_SERVER | **SonarQube** |
+ | SONARQUBE_SCANNER | **SonarQube Scanner 3.0.3.778** |
+ | SONARQUBE_ACCESS_TOKEN | - |
+ | GITHUB_ACCESS_TOKEN | - |
+ | NEXUS_HOST | **http://\<host-ip-address\>:8081** |
+ | NEXUS_REPO | **saas-template** |
+ | NEXUS_USER | **admin** |
+ | NEXUS_PASS | **admin123** |
+ | SERVICES_GJ_PORT | **8182** |
 * Configure "GitHub Pull Request Builder"
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-ghprb.png)
   * Add your user into WhiteList
