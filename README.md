@@ -17,6 +17,7 @@
 ## Nexus
 * Up Nexus instance
   ```
+  > cd ~/projects
   > cd swec-content/nexus
   > ./nexus-up.sh -d
   ```
@@ -32,6 +33,7 @@
 ## SonarQube
 * Up SonarQube instance
   ```
+  > cd ~/projects
   > cd swec-content/sonarqube
   > ./sonarqube-up.sh -d
   ```
@@ -42,7 +44,6 @@
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/sonar-token.png)
 
 
-
 ## Jenkins
 * Install
   ```
@@ -50,11 +51,15 @@
   ```
 * Access point **http://\<host-ip-address\>:8080**
 * Apply fix(es) for **"ALPN callback dropped: SPDY and HTTP/2 are disabled. Is alpn-boot on the boot class path?"**
-  * Get your Java version 
+  * Check your Java version 
+    ```bash
+    > java -version
     ```
-    java -version
-    ```
+    > openjdk version "1.8.0_151"
+    > OpenJDK Runtime Environment (build 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12)
+    > OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
   * Find corresponding alpn boot library
+  
     ```
     https://www.eclipse.org/jetty/documentation/9.4.x/alpn-chapter.html#alpn-versions
     ```
@@ -109,15 +114,17 @@
 * Specify your fork url
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-repo.png)
 * Add job parameters
-  * SONARQUBE_SERVER - SonarQube
-  * SONARQUBE_SCANNER - SonarQube Scanner 3.0.3.778
-  * SONARQUBE_ACCESS_TOKEN - 
-  * GITHUB_ACCESS_TOKEN -
-  * NEXUS_HOST - 
-  * NEXUS_REPO - 
-  * NEXUS_USER - 
-  * NEXUS_PASS - 
-  * SERVICES_GJ_PORT - 8182
+  | Parameter name | Value |
+  | --- | --- |
+  | SONARQUBE_SERVER | **SonarQube** |
+  | SONARQUBE_SCANNER | **SonarQube Scanner 3.0.3.778** |
+  | SONARQUBE_ACCESS_TOKEN | . |
+  | GITHUB_ACCESS_TOKEN | . |
+  | NEXUS_HOST | **http://\<host-ip-address\>:8081** |
+  | NEXUS_REPO | **saas-template** |
+  | NEXUS_USER | **admin** |
+  | NEXUS_PASS | **admin123** |
+  | SERVICES_GJ_PORT | **8182** |
 * Configure "GitHub Pull Request Builder"
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-ghprb.png)
   * Add your user into WhiteList
