@@ -1,6 +1,12 @@
 # Software Engineering Course
 
 ## Prerequisites
+* Allocate Ubuntu 16.04 VM
+* Refresh VM
+  ```
+  > apt-get update
+  > apt-get -y upgrade
+  ```
 * Install [Talan](https://github.com/project-talan/talan-core)
 * Install toolset
   ```
