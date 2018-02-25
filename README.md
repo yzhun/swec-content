@@ -2,22 +2,17 @@
 
 ## Prerequisites
 * Allocate Ubuntu 16.04 VM
-* Refresh VM
-  ```
-  > apt-get update
-  > apt-get -y upgrade
-  ```
-* Install [Talan](https://github.com/project-talan/talan-core)
-* Install toolset
-  ```
-  > tln install java,maven,nodejs,docker,docker-compose
-  ```
 * Clone repository with helpers
   ```
   > cd ~
   > mkdir projects
   > cd projects
   > git clone https://github.com/swe-course/swec-content.git
+  ```
+* Install prerequisites
+  ```
+  > cd swec-content
+  > ./prereq.sh
   ```
 
 ## Nexus
