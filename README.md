@@ -18,8 +18,7 @@
 ## Nexus
 * Up Nexus instance
   ```
-  > cd ~/projects
-  > cd swec-content/nexus
+  > cd ~/projects/swec-content/nexus
   > ./nexus-up.sh -d
   ```
 * Access point **http://\<host-ip-address\>:8081**, user/pass **admin/admin123**
@@ -34,8 +33,7 @@
 ## SonarQube
 * Up SonarQube instance
   ```
-  > cd ~/projects
-  > cd swec-content/sonarqube
+  > cd ~/projects/swec-content/sonarqube
   > ./sonarqube-up.sh -d
   ```
 * Access point **http://\<host-ip-address\>:9000**, user/pass **admin/admin**
