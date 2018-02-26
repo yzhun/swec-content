@@ -12,7 +12,7 @@ do
   curl -s -o /dev/null -w "%{http_code}" POST \
     --user admin:admin \
     -H "${crumb}" \
-    --data "<jenkins><install plugin='http_request@latest'/></jenkins>" \
+    --data "<jenkins><install plugin='${plugin}@latest'/></jenkins>" \
     --header 'Content-Type: text/xml' \
     http://localhost:8080/pluginManager/installNecessaryPlugins
   echo
