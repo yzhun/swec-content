@@ -102,13 +102,11 @@
     ```
     systemctl stop jenkins && systemctl start jenkins
     ```
-
-### Install plugins
-* "GitHub Pull Request Builder"
-* "SonarQube Scanner"
-* "Sonar Quality Gates"
-* "Pipeline Utility Steps"
-* "HTTP Request"
+* Install plugins
+  ```
+  > cd ~/projects/swec-content/jenkins
+  > ./install-plugins.sh
+  ```
 
 ### Configure plugins
 * Configure "SonarQube servers" instance, name **SonarQube**
