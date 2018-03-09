@@ -1,11 +1,11 @@
 # Create new branch
-git checkout -b "#101"
+git checkout -b 18.5.0
 touch file.txt
 git add *
 git status
-git commit -m"your comment here"
+git commit -m"v18.5.0"
 git checkout master
 
 # Push branch
-git checkout "#101"
-git push origin "#101"
+git checkout 18.5.0
+git push origin 18.5.0
