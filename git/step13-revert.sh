@@ -15,3 +15,6 @@ $ git revert HEAD
 
 # revert with parent from master
 git revert HEAD -m 1
+
+# revert revert
+git revert HEAD
