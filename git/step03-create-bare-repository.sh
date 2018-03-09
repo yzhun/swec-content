@@ -9,3 +9,6 @@ mkdir /opt/git/swec.git
 # Initialize bare repository
 cd /opt/git/sec.git
 git --bare init
+
+#exit git session
+# Ctrl+D
