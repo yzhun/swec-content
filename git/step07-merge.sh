@@ -1,5 +1,5 @@
 
 git checkout master
-git merger "#101"
+git merge 18.5.0
 # :wq - exit vim )
 git push origin master
