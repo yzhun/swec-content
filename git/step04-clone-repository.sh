@@ -4,8 +4,8 @@
 
 # Go to home folder
 cd ~
-git clone git@host-ip-address:/opt/git/sec.git
-cd sec
+git clone git@<host-ip-address>:/opt/git/swec.git
+cd swec
 git config --local user.name "your name"
 git config --local user.email "your email"
 git config --local --list
@@ -15,5 +15,6 @@ touch README.md
 git status
 git add *
 git status
-git commit -m"your comment here"
+git commit -m"first commit"
+git log
 git push origin master
