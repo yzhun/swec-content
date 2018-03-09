@@ -21,4 +21,5 @@ git log -4
 # copy commit hash for "2.txt" <commit-hash>
 
 git checkout master
+ls -la
 git cherry-pick <commit-hash>
