@@ -7,7 +7,7 @@ su - git
 mkdir /opt/git/swec.git
 
 # Initialize bare repository
-cd /opt/git/sec.git
+cd /opt/git/swec.git
 git --bare init
 
 #exit git session
