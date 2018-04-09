@@ -9,3 +9,4 @@ mkdir git
 
 # Change folder owner
 chown git:git git
+ls -la
