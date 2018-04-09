@@ -9,6 +9,9 @@ echo --- Install Talan ---
 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/project-talan/talan-core/latest/install.sh)"
 sudo tln install java,maven,nodejs,docker,docker-compose
 
+echo --- Install Angular CLI ---
+npm install -g @angular/cli
+
 echo --- Check cmponents ---
 java -version
 mvn -v
