@@ -1,6 +1,6 @@
 # Create new branch
 git checkout -b 18.5.0
-touch file.txt
+touch file-18.5.0.txt
 git add *
 git status
 git commit -m"v18.5.0"
