@@ -151,7 +151,7 @@ Goto Manage **Jenkins/Global Tool Configuration**
     ```
     https://github.com/<YOU_ACCOUNT|ORG>/saas-template.git
     ```
-  * Use git repo Refspec:
+  * Use git repo Refspec (**Advanced** button):
     ```
     +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
      ```
@@ -162,4 +162,4 @@ Goto Manage **Jenkins/Global Tool Configuration**
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-definition.png)
 
 ## Gonfigure branch(es)
-* Mark master branch as protected
+* Mark master branch as protected at Repository **Settings**
