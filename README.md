@@ -109,6 +109,7 @@
   ```
 
 ### Configure plugins
+Goto Manage **Jenkins/Configure System**
 * Configure "SonarQube servers" instance, name **SonarQube**
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-sonar.png)
 * "GitHub" instance + Github access credentials using created token
@@ -117,7 +118,8 @@
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-ghprb.png)
 
 ### Configure tools
-* Configure "SonarQube Scanner", name - **SonarQube Scanner 3.0.3.778**
+Goto Manage **Jenkins/Global Tool Configuration**
+* Configure "SonarQube Scanner", name - **SonarQube Scanner**
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-tools-sonar-scanner.png)
 
 ## Clone template **https://github.com/swe-course/saas-template**
@@ -130,7 +132,7 @@
   | Parameter name | Value |
   | --- | --- |
   | SONARQUBE_SERVER | **SonarQube** |
-  | SONARQUBE_SCANNER | **SonarQube Scanner 3.0.3.778** |
+  | SONARQUBE_SCANNER | **SonarQube Scanner** |
   | SONARQUBE_ACCESS_TOKEN | - |
   | GITHUB_ACCESS_TOKEN | - |
   | NEXUS_HOST | **http://\<host-ip-address\>:8081** |
