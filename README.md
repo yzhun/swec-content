@@ -55,7 +55,7 @@
     > java -version
     ```
     
-    > openjdk version "1.8.0_151"
+    > openjdk version "1.8.0_162"
     
     > OpenJDK Runtime Environment (build 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12)
     
@@ -68,13 +68,13 @@
     ```
     | OpenJDK version | ALPN version |
     | --- | --- |
-    | 1.8.0u151 | 8.1.11.v20170118 |
+    | 1.8.0u162 | 8.1.12.v20180117 |
     
   * Copy link to the corresponding ALPN jar from 'ALPN version' folder
     ```
     http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/
     ```
-    > http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.11.v20170118/alpn-boot-8.1.11.v20170118.jar
+    > http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.12.v20180117/alpn-boot-8.1.12.v20180117.jar
     
   * Goto JVM folder
     ```
@@ -82,7 +82,7 @@
     ```
   * Download jar file
     ```
-    > wget http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.11.v20170118/alpn-boot-8.1.11.v20170118.jar
+    > wget http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.12.v20180117/alpn-boot-8.1.12.v20180117.jar
     ```
   * Goto folder
     ```
@@ -96,7 +96,7 @@
     ```
     too
     ```
-    JAVA_ARGS="-Djava.awt.headless=true -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.11.v20170118.jar"
+    JAVA_ARGS="-Djava.awt.headless=true -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.12.v20180117.jar"
     ```
   * Restart Jenkins
     ```
