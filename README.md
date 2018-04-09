@@ -145,14 +145,20 @@ Goto Manage **Jenkins/Global Tool Configuration**
   * Add your user into WhiteList
 * "GitHub hook trigger for GITScm polling"  
 * Set pipeline definitions
-  * Add additional branch
+  * Select **Pipeline script from SCM**
+  * Select SCM **Git**
+  * Set repository url
     ```
-    ${sha1}
+    https://github.com/<YOU_ACCOUNT|ORG>/saas-template.git
     ```
   * Use git repo Refspec:
     ```
     +refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*
      ```
+  * Add additional branch
+    ```
+    ${sha1}
+    ```
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-definition.png)
 
 ## Gonfigure branch(es)
