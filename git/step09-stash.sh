@@ -12,4 +12,4 @@ git checkout 18.5.0
 git stash pop
 git commit -m"commit stash"
 
-gir checkout master
+git checkout master
