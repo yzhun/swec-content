@@ -5,7 +5,7 @@ git status
 # stach changes
 git add *
 git stash
-git stach list
+git stash list
 
 # switch to another branch
 git checkout 18.5.0
