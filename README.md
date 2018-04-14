@@ -96,7 +96,7 @@
     ```
     too
     ```
-    JAVA_ARGS="-Djava.awt.headless=true -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.12.v20180117.jar"
+    JAVA_ARGS="-Djava.awt.headless=true -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.12.v20180117.jar -Dhudson.DNSMultiCast.disabled=true"
     ```
   * Restart Jenkins
     ```
