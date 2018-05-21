@@ -8,6 +8,8 @@ services:
       - SONARQUBE_JDBC_URL=jdbc:mysql://sonarqube_db:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance&useSSL=false
       - SONARQUBE_JDBC_USERNAME=${SONARQUBE_DB_USERNAME}
       - SONARQUBE_JDBC_PASSWORD=${SONARQUBE_DB_PASSWORD}
+    depends_on:
+      - sonarqube_db
     links:
       - sonarqube_db
   sonarqube_db:
