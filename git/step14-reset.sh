@@ -2,7 +2,7 @@
 # remove from staging area
 touch file2reset.txt
 git status
-git add *
+git add .
 git status
 git reset HEAD -- .
 git status
