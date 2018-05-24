@@ -13,7 +13,7 @@ git config --local --list
 # Add new file
 touch README.md
 git status
-git add *
+git add .
 git status
 git commit -m"first commit"
 git log
