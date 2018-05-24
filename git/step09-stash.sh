@@ -3,7 +3,7 @@ touch file2stash
 git status
 
 # stach changes
-git add *
+git add .
 git stash
 git stash list
 
