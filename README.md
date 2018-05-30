@@ -109,7 +109,7 @@
   ```
 
 ### Configure plugins
-Goto Manage **Jenkins/Configure System**
+Goto Manage **Manage Jenkins/Configure System**
 * Configure "SonarQube servers" instance, name **SonarQube**
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-sonar.png)
 * "GitHub" instance + Github access credentials using created token
