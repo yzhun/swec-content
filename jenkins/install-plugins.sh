@@ -5,7 +5,7 @@ echo ---- Installing Jenkins plugins ----
 crumb=$(curl -s -u "admin:admin" "http://localhost:8080/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,\":\",//crumb)")
 echo ${crumb}
 
-plugins=(ghprb sonar pipeline-utility-steps http_request, pipeline-maven)
+plugins=(ghprb sonar pipeline-utility-steps http_request pipeline-maven)
 for plugin in "${plugins[@]}"
 do
   echo ---- Installing ${plugin} ----
