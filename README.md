@@ -118,7 +118,7 @@ Goto Manage **Manage Jenkins/Configure System**
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-ghprb.png)
 
 ### Configure tools
-Goto Manage **Jenkins/Global Tool Configuration**
+Goto Manage **Manage Jenkins/Global Tool Configuration**
 * Configure "SonarQube Scanner", name - **SonarQube Scanner**
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-tools-sonar-scanner.png)
 
