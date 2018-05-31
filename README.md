@@ -68,7 +68,7 @@
     ```
     | OpenJDK version | ALPN version |
     | --- | --- |
-    | 1.8.0u162 | 8.1.12.v20180117 |
+    | 1.8.0u171 | 8.1.12.v20180117 |
     
   * Copy link to the corresponding ALPN jar from 'ALPN version' folder
     ```
