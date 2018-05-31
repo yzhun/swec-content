@@ -124,7 +124,7 @@ Goto Manage **Manage Jenkins/Global Tool Configuration**
 
 ## Clone template **https://github.com/swe-course/saas-template**
 
-## Create new pipeline job
+## Create new 'Pipeline' job
 * Specify your fork url
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-pipeline-repo.png)
 * Add job parameters
@@ -163,3 +163,7 @@ Goto Manage **Manage Jenkins/Global Tool Configuration**
 
 ## Gonfigure branch(es)
 * Mark master branch as protected at Repository **Settings**
+
+## Create new 'Multibranch Pipeline' job
+* 
+
