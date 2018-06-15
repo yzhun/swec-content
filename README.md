@@ -120,7 +120,7 @@ Goto Manage **Manage Jenkins/Global Tool Configuration**
 * Configure "SonarQube Scanner", name - **SonarQube Scanner**
   ![](https://raw.githubusercontent.com/swe-course/swec-content/master/imgs/jenkins-tools-sonar-scanner.png)
 
-## Clone template **https://github.com/swe-course/saas-template**
+## Fork template **https://github.com/swe-course/saas-template**
 
 ## Create new 'Pipeline' job
 * Specify your fork url
