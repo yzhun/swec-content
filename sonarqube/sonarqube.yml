@@ -21,7 +21,7 @@ services:
     networks:
       - sonarnet
     volumes:
-      - /opt/sonarqube/db:/var/lib/mysql      
+      - /opt/sonarqube/db:/var/lib/mysql
     environment:
       - MYSQL_DATABASE=${SONARQUBE_DATABASE}
       - MYSQL_ROOT_PASSWORD=${SONARQUBE_ROOT_PASSWORD}
