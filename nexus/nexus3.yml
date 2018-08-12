@@ -4,3 +4,5 @@ services:
     build: ./nexus3
     ports:
       - 8081:8081
+    volumes:
+      - /opt/nexus/nexus-data:/nexus-data
