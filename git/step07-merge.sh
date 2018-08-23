@@ -1,5 +1,17 @@
+#!/bin/bash
 
 git checkout master
-git merge 18.5.0
+
+# Merge first branch
+git merge 18.8.0
+
+# Merge second branch
+git merge submodule
+
 # :wq - exit vim )
+
+# To see a diamond
+git log --graph
+
+# Publish changes
 git push origin master

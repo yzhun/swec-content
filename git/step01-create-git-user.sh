@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Login into remote VM
 
 # Create git user

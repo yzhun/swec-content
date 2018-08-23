@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Switch to your local machine
 
 # Go to .ssh folder

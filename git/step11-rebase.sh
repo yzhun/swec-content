@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # create new branch
 git checkout -b b2r
@@ -11,8 +12,11 @@ git commit -m"b2r commit"
 git checkout master
 touch b2r.master
 git add .
-git commit -m"commit in master"
+git commit -m"b2r commit in master"
 
 # rebase
 git checkout b2r
 git rebase master
+
+git checkout master
+git merge b2r

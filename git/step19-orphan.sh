@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # create orphan branch
 git checkout --orphan orphan_branch
 git rm -rf .
