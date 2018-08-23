@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Clone repository
 
 # Switch to your local machine

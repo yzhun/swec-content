@@ -1,15 +1,20 @@
+#!/bin/bash
+
 # change working directory
-touch file2stash
+touch file2stash-index
+git add .
+
+touch file2stash-workdir
+
 git status
 
 # stach changes
-git add .
-git stash
+git stash push -u
 git stash list
 
 # switch to another branch
-git checkout 18.5.0
+git checkout submodule
 git stash pop
-git commit -m"commit stash"
+git add .
+git commit -m"commit stashed changes"
 
-git checkout master
