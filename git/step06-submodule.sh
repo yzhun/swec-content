@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git checkout master
-git branch -b submodule
+git checkout -b submodule
 
 # Submodules
 git submodule add https://github.com/pure-css/pure.git pure-css
