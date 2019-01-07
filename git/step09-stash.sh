@@ -9,7 +9,7 @@ touch file2stash-workdir
 git status
 
 # stach changes
-git stash push -u
+git stash save -u
 git stash list
 
 # switch to another branch
