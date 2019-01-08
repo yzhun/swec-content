@@ -6,7 +6,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install mc
 
 echo --- Install Talan ---
-sudo tln install java,maven,docker,docker-compose
+sudo tln install java:maven:docker:docker-compose
 
 echo --- Install Angular CLI ---
 sudo npm install -g @angular/cli
