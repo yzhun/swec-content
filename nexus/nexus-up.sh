@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose up $1
+docker run --rm $1 -p 8081:8081 --name nexus sonatype/nexus3
