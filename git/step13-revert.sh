@@ -16,7 +16,7 @@ git commit -m"master.txt"
 git merge b2revert
 
 # exit :wq
-git log --graph
+git log --graph -4
 
 # revert merge commit
 git revert HEAD
