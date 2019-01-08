@@ -51,10 +51,10 @@
     ```bash
     > java -version
     ```
-
-    > openjdk version "1.8.0_171"
-    > OpenJDK Runtime Environment (build 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11)
-    > OpenJDK 64-Bit Server VM (build 25.171-b11, mixed mode)
+    
+    > openjdk version "1.8.0_191"
+    > OpenJDK Runtime Environment (build 1.8.0_191-8u191-b12-0ubuntu0.16.04.1-b12)
+    > OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode)
     
   * Find corresponding alpn boot library
   
