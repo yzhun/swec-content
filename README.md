@@ -7,6 +7,10 @@
   ```
   sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/swe-course/swec-content/master/prereq.sh)"
   ```
+* Clone repository
+  ```
+  mkdir projects; pushd projects; git clone https://github.com/swe-course/swec-content.git; popd
+  ```
 
 ## Nexus
 * Up Nexus instance
