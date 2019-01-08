@@ -11,7 +11,7 @@ sudo tln install java:maven:docker:docker-compose
 echo --- Install Angular CLI ---
 sudo npm install -g @angular/cli
 
-echo --- Check cmponents ---
+echo --- Check components ---
 java -version
 mvn -v
 node -v
