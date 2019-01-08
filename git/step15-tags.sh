@@ -24,3 +24,4 @@ git checkout -b rc1
 
 # delete
 git tag -d v18.8.0-rc1
+git tag --list
