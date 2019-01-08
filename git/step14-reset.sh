@@ -13,9 +13,11 @@ git status
 git add .
 git commit -m"file2reset"
 git reset --soft HEAD^1
+git status
 
 # hard
 git reset --hard HEAD^1
+git status
 
 # ^ vs ~
 # http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde
