@@ -63,13 +63,13 @@
     ```
     | OpenJDK version | ALPN version |
     | --- | --- |
-    | 1.8.0u171 | 8.1.12.v20180117 |
+    | 1.8.0u191 | 8.1.13.v20181017 |
     
   * Copy link to the corresponding ALPN jar from 'ALPN version' folder
     ```
     http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/
     ```
-    > http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.12.v20180117/alpn-boot-8.1.12.v20180117.jar
+    > http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.13.v20181017/alpn-boot-8.1.13.v20181017.jar
     
   * Goto JVM folder
     ```
@@ -77,7 +77,7 @@
     ```
   * Download jar file
     ```
-    > wget http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.12.v20180117/alpn-boot-8.1.12.v20180117.jar
+    > wget http://central.maven.org/maven2/org/mortbay/jetty/alpn/alpn-boot/8.1.13.v20181017/alpn-boot-8.1.13.v20181017.jar
     ```
   * Goto folder
     ```
@@ -91,7 +91,7 @@
     ```
     too
     ```
-    JAVA_ARGS="-Djava.awt.headless=true -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.12.v20180117.jar -Dhudson.DNSMultiCast.disabled=true"
+    JAVA_ARGS="-Djava.awt.headless=true -Xbootclasspath/p:/usr/lib/jvm/alpn-boot-8.1.13.v20181017.jar -Dhudson.DNSMultiCast.disabled=true"
     ```
   * Restart Jenkins
     ```
