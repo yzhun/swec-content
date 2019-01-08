@@ -28,3 +28,4 @@ git log --graph -4
 
 # revert revert
 git revert HEAD
+git log --graph -4
