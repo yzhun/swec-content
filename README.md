@@ -2,13 +2,7 @@
 
 ## Prerequisites
 * Allocate Ubuntu 16.04 VM
-* Clone repository with helpers
-  ```
-  > cd ~
-  > mkdir projects
-  > cd projects
-  > git clone https://github.com/swe-course/swec-content.git
-  ```
+* Install [helper - talan cli](https://github.com/project-talan/tln-cli)
 * Install prerequisites
   ```
   > cd swec-content
