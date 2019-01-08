@@ -5,8 +5,7 @@
 * Install [helper - talan cli](https://github.com/project-talan/tln-cli)
 * Install prerequisites
   ```
-  > cd swec-content
-  > ./prereq.sh
+  sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/swe-course/swec-content/master/prereq.sh)"
   ```
 
 ## Nexus
