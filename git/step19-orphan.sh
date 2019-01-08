@@ -9,3 +9,4 @@ git add .
 git commit -a -m "Initial Commit"
 
 git log
+git branch -av
