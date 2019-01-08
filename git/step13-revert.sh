@@ -24,6 +24,7 @@ git revert HEAD
 
 # revert with parent from master
 git revert HEAD -m 1
+git log --graph -4
 
 # revert revert
 git revert HEAD
