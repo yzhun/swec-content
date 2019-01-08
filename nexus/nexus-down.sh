@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose -f ./nexus3.yml down --rmi all
+docker-compose down --rmi all
