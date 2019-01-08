@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose -f ./nexus3.yml up $1
+docker-compose up $1
