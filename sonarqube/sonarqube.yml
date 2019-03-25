@@ -18,6 +18,7 @@ services:
       - sonarqube_db
   sonarqube_db:
     image: mysql:5.7
+    command: --max_allowed_packet=16777216
     networks:
       - sonarnet
     volumes:
